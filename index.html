@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eison Ramírez — Desarrollador de Software Full Stack</title>
+  <meta name="description" content="Hoja de vida de Eison Stiven Ramírez Vásquez, desarrollador de software junior con enfoque Full Stack e IA: Java, JavaScript, Flutter, MySQL y automatización.">
+  <meta name="author" content="Eison Stiven Ramírez Vásquez">
+  <meta name="theme-color" content="#05060b">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CO">
+  <meta property="og:title" content="Eison Ramírez — Desarrollador de Software Full Stack">
+  <meta property="og:description" content="Portafolio y hoja de vida: desarrollo web Full Stack, automatización e inteligencia artificial aplicada.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/print.css" media="print">
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+</head>
+<body>
+
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- Iconos reutilizables -->
+  <svg class="sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <symbol id="i-code" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></g></symbol>
+    <symbol id="i-server" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="7" rx="2"/><rect x="2" y="14" width="20" height="7" rx="2"/><line x1="6" y1="6.5" x2="6.01" y2="6.5"/><line x1="6" y1="17.5" x2="6.01" y2="17.5"/></g></symbol>
+    <symbol id="i-mobile" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><line x1="10.5" y1="18" x2="13.5" y2="18"/></g></symbol>
+    <symbol id="i-db" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/></g></symbol>
+    <symbol id="i-tools" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></g></symbol>
+    <symbol id="i-bot" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="8" width="16" height="12" rx="3"/><path d="M12 4v4"/><circle cx="12" cy="4" r="1.4"/><circle cx="9" cy="14" r="1"/><circle cx="15" cy="14" r="1"/><path d="M9 17.5h6"/></g></symbol>
+    <symbol id="i-cloud" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 0 0 .4-8.98A6 6 0 0 0 6.3 9.5 4.2 4.2 0 0 0 6.5 19h11z"/></g></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9L12 3z"/><path d="M19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8L19 16z"/></g></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></g></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7L22 6"/></g></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.9 2.2z"/></g></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.26 5.67.41.36.78 1.06.78 2.14 0 1.55-.01 2.8-.01 3.18 0 .31.21.68.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="m6 11 6-6 6 6"/></g></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12.5 5 5L20 6.5"/></g></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></g></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></g></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></g></symbol>
+    <symbol id="i-graduation" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 9 12 4 2 9l10 5 10-5z"/><path d="M6 11.5V17c0 1.5 2.7 3 6 3s6-1.5 6-3v-5.5"/></g></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="5"/><path d="m8.5 13.5-1.5 8 5-3 5 3-1.5-8"/></g></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20c8 1 16-5 16-16C12 4 5 8 5 16c0 2 .5 3.5 1 4z"/><path d="M4 20 12 12"/></g></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 5.5a3.5 3.5 0 0 1 0 7"/><path d="M18 20a6.5 6.5 0 0 0-2-4.7"/></g></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h6"/></g></symbol>
+    <symbol id="i-terminal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4" width="19" height="16" rx="2.5"/><path d="m7 9 3 3-3 3"/><path d="M13 15h4"/></g></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18z"/></g></symbol>
+  </svg>
+
+  <div class="progreso" aria-hidden="true"><span class="progreso__barra" id="progreso-barra"></span></div>
+
+  <!-- Fondo animado -->
+  <canvas class="fondo-particulas" id="fondo-particulas" aria-hidden="true"></canvas>
+  <div class="aurora" aria-hidden="true">
+    <span class="aurora__blob aurora__blob--1"></span>
+    <span class="aurora__blob aurora__blob--2"></span>
+    <span class="aurora__blob aurora__blob--3"></span>
+  </div>
+  <canvas class="matrix" id="matrix" aria-hidden="true"></canvas>
+
+  <!-- Cursor personalizado -->
+  <div class="cursor" id="cursor" aria-hidden="true">
+    <span class="cursor__punto"></span>
+    <span class="cursor__anillo"></span>
+  </div>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner contenedor">
+      <a class="nav__marca" href="#inicio" aria-label="ER Eison Ramírez — Ir al inicio">
+        <span class="nav__logo" aria-hidden="true">ER</span>
+        <span class="nav__nombre">Eison Ramírez</span>
+      </a>
+
+      <nav class="nav__menu" id="menu" aria-label="Navegación principal">
+        <a class="nav__enlace" href="#perfil">Perfil</a>
+        <a class="nav__enlace" href="#habilidades">Habilidades</a>
+        <a class="nav__enlace" href="#proyectos">Proyectos</a>
+        <a class="nav__enlace" href="#formacion">Formación</a>
+        <a class="nav__enlace" href="#contacto">Contacto</a>
+      </nav>
+
+      <div class="nav__acciones">
+        <button class="nav__icono" type="button" id="matrix-toggle" aria-pressed="false" aria-label="Activar modo matrix" title="Modo matrix">
+          <svg class="icono" aria-hidden="true"><use href="#i-grid"/></svg>
+        </button>
+        <button class="nav__toggle" type="button" id="menu-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
+          <svg class="icono nav__toggle-abrir" aria-hidden="true"><use href="#i-menu"/></svg>
+          <svg class="icono nav__toggle-cerrar" aria-hidden="true"><use href="#i-close"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+
+    <!-- ================= INICIO ================= -->
+    <section class="hero" id="inicio" aria-labelledby="hero-titulo">
+      <div class="contenedor hero__grid">
+        <div class="hero__texto">
+          <h1 class="hero__titulo" id="hero-titulo" data-reveal style="--d:.05s">
+            Eison Stiven<br>
+            <span class="texto-degradado">Ramírez Vásquez</span>
+          </h1>
+
+          <p class="hero__rol" data-reveal style="--d:.1s">
+            <span class="hero__rol-fijo">Desarrollador de Software Junior</span>
+            <span class="hero__rol-tipo"><span id="typing" class="typing" aria-hidden="true">Full Stack · Java + JavaScript</span><span class="typing__caret" aria-hidden="true"></span></span>
+            <span class="solo-lectores">Especializado en desarrollo Full Stack, automatización e inteligencia artificial aplicada.</span>
+          </p>
+
+          <p class="hero__bajada" data-reveal style="--d:.15s">
+            Aprendiz ADSO del SENA enfocado en construir aplicaciones web completas,
+            automatizar procesos con inteligencia artificial y convertir ideas en
+            productos que resuelven problemas reales.
+          </p>
+
+          <div class="hero__acciones" data-reveal style="--d:.2s">
+            <a class="btn btn--primario" href="https://github.com/Stivxn-n" target="_blank" rel="noopener">
+              <svg class="icono" aria-hidden="true"><use href="#i-github"/></svg>
+              Ver mi GitHub
+            </a>
+          </div>
+
+          <ul class="hero__datos" data-reveal style="--d:.25s">
+            <li><svg class="icono" aria-hidden="true"><use href="#i-pin"/></svg> Bogotá, Colombia</li>
+            <li><svg class="icono" aria-hidden="true"><use href="#i-graduation"/></svg> ADSO · SENA</li>
+            <li><a href="https://github.com/Stivxn-n" target="_blank" rel="noopener"><svg class="icono" aria-hidden="true"><use href="#i-github"/></svg> Stivxn-n</a></li>
+          </ul>
+        </div>
+
+        <div class="hero__visual">
+          <div class="holo" data-tilt data-reveal style="--d:.1s">
+            <div class="holo__anillo" aria-hidden="true"></div>
+            <div class="holo__marco">
+              <!-- Para usar tu foto: reemplaza assets/foto.jpg manteniendo el nombre -->
+              <img class="holo__foto" id="foto-perfil" src="assets/foto.jpg" data-fallback="assets/avatar.svg" alt="Retrato de Eison Stiven Ramírez Vásquez" width="440" height="440" decoding="async">
+              <span class="holo__scan" aria-hidden="true"></span>
+            </div>
+            <span class="holo__chip holo__chip--1" aria-hidden="true">Java</span>
+            <span class="holo__chip holo__chip--2" aria-hidden="true">Flutter</span>
+            <span class="holo__chip holo__chip--3" aria-hidden="true">IA</span>
+            <p class="holo__estado"><span class="punto-vivo" aria-hidden="true"></span> Abierto a oportunidades</p>
+          </div>
+
+          <dl class="ficha-rapida" data-reveal style="--d:.2s">
+            <div class="ficha-rapida__item">
+              <dt>Stack</dt>
+              <dd>Java · Python · JavaScript · Flutter · MySQL</dd>
+            </div>
+            <div class="ficha-rapida__item">
+              <dt>Formación</dt>
+              <dd>ADSO · SENA (2025 – 2026)</dd>
+            </div>
+            <div class="ficha-rapida__item">
+              <dt>Objetivo</dt>
+              <dd>Software útil, IA aplicada y aprendizaje constante.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PERFIL ================= -->
+    <section class="seccion" id="perfil" aria-labelledby="perfil-titulo">
+      <div class="contenedor">
+        <div class="seccion__cabecera" data-reveal>
+          <p class="eyebrow"><span class="eyebrow__num">01</span> Perfil</p>
+          <h2 class="seccion__titulo" id="perfil-titulo">Quién soy y cómo trabajo</h2>
+          <p class="seccion__bajada">Curiosidad, criterio y ganas de construir: así resumo mi forma de aprender y de aportar a un equipo.</p>
+        </div>
+
+        <div class="perfil__grid">
+          <div class="perfil__texto" data-reveal>
+            <p>
+              Soy aprendiz de <strong>Tecnólogo en Análisis y Desarrollo de Software (ADSO)</strong>
+              en el SENA, con formación práctica en desarrollo web Full Stack, bases de datos
+              y despliegue de aplicaciones. Disfruto especialmente el momento en que el código
+              deja de ser teoría y empieza a resolver un problema real.
+            </p>
+            <p>
+              He trabajado en proyectos académicos y personales que combinan frontend, backend
+              y automatización: desde un sistema de gestión académica con Java y MySQL hasta
+              asistentes virtuales con inteligencia artificial. Me caracterizo por el liderazgo,
+              la escucha activa y el trabajo en equipo, y por mantener una curiosidad constante
+              por aprender herramientas nuevas.
+            </p>
+
+            <dl class="ficha">
+              <div class="ficha__item">
+                <dt>Ubicación</dt>
+                <dd>Bogotá, Colombia</dd>
+              </div>
+              <div class="ficha__item">
+                <dt>Formación</dt>
+                <dd>ADSO · SENA</dd>
+              </div>
+              <div class="ficha__item">
+                <dt>Idiomas</dt>
+                <dd>Español nativo · Inglés A1</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="perfil__tarjetas">
+            <article class="destacado" data-reveal style="--d:.05s">
+              <span class="destacado__icono"><svg class="icono" aria-hidden="true"><use href="#i-code"/></svg></span>
+              <h3>Full Stack en práctica</h3>
+              <p>Frontend con HTML, CSS y JavaScript; backend con Java y Python; datos en MySQL.</p>
+            </article>
+            <article class="destacado" data-reveal style="--d:.1s">
+              <span class="destacado__icono"><svg class="icono" aria-hidden="true"><use href="#i-bot"/></svg></span>
+              <h3>IA y automatización</h3>
+              <p>Flujos conversacionales, chatbots y asistentes virtuales con Botpress y herramientas de IA.</p>
+            </article>
+            <article class="destacado" data-reveal style="--d:.15s">
+              <span class="destacado__icono"><svg class="icono" aria-hidden="true"><use href="#i-users"/></svg></span>
+              <h3>Trabajo en equipo</h3>
+              <p>Liderazgo, escucha activa y comunicación respetuosa para construir con otros.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= HABILIDADES ================= -->
+    <section class="seccion" id="habilidades" aria-labelledby="habilidades-titulo">
+      <div class="contenedor">
+        <div class="seccion__cabecera" data-reveal>
+          <p class="eyebrow"><span class="eyebrow__num">02</span> Habilidades técnicas</p>
+          <h2 class="seccion__titulo" id="habilidades-titulo">Tecnologías con las que construyo</h2>
+          <p class="seccion__bajada">Herramientas que he usado en formación y proyectos, organizadas por área.</p>
+        </div>
+
+        <div class="habilidades__grid">
+          <article class="habilidad" data-reveal>
+            <span class="habilidad__icono"><svg class="icono" aria-hidden="true"><use href="#i-code"/></svg></span>
+            <h3>Frontend</h3>
+            <ul class="chips">
+              <li class="chip">HTML5</li>
+              <li class="chip">CSS3</li>
+              <li class="chip">JavaScript</li>
+              <li class="chip">Bootstrap</li>
+            </ul>
+          </article>
+
+          <article class="habilidad" data-reveal style="--d:.05s">
+            <span class="habilidad__icono"><svg class="icono" aria-hidden="true"><use href="#i-server"/></svg></span>
+            <h3>Backend y programación</h3>
+            <ul class="chips">
+              <li class="chip">Java</li>
+              <li class="chip">Python</li>
+              <li class="chip">APIs</li>
+            </ul>
+          </article>
+
+          <article class="habilidad" data-reveal style="--d:.1s">
+            <span class="habilidad__icono"><svg class="icono" aria-hidden="true"><use href="#i-mobile"/></svg></span>
+            <h3>Desarrollo móvil</h3>
+            <ul class="chips">
+              <li class="chip">Flutter</li>
+              <li class="chip">Dart</li>
+            </ul>
+          </article>
+
+          <article class="habilidad" data-reveal style="--d:.15s">
+            <span class="habilidad__icono"><svg class="icono" aria-hidden="true"><use href="#i-db"/></svg></span>
+            <h3>Bases de datos</h3>
+            <ul class="chips">
+              <li class="chip">MySQL</li>
+              <li class="chip">Modelado relacional</li>
+            </ul>
+          </article>
+
+          <article class="habilidad" data-reveal style="--d:.2s">
+            <span class="habilidad__icono"><svg class="icono" aria-hidden="true"><use href="#i-tools"/></svg></span>
+            <h3>Herramientas</h3>
+            <ul class="chips">
+              <li class="chip">Git</li>
+              <li class="chip">GitHub</li>
+              <li class="chip">NetBeans</li>
+              <li class="chip">IntelliJ IDEA</li>
+            </ul>
+          </article>
+
+          <article class="habilidad" data-reveal style="--d:.25s">
+            <span class="habilidad__icono"><svg class="icono" aria-hidden="true"><use href="#i-bot"/></svg></span>
+            <h3>IA y automatización</h3>
+            <ul class="chips">
+              <li class="chip">Botpress</li>
+              <li class="chip">Chatbots</li>
+              <li class="chip">Asistentes virtuales</li>
+            </ul>
+          </article>
+
+          <article class="habilidad" data-reveal style="--d:.3s">
+            <span class="habilidad__icono"><svg class="icono" aria-hidden="true"><use href="#i-cloud"/></svg></span>
+            <h3>Infraestructura</h3>
+            <ul class="chips">
+              <li class="chip">Railway</li>
+              <li class="chip">Despliegue</li>
+            </ul>
+          </article>
+
+          <article class="habilidad" data-reveal style="--d:.35s">
+            <span class="habilidad__icono"><svg class="icono" aria-hidden="true"><use href="#i-spark"/></svg></span>
+            <h3>Herramientas de IA</h3>
+            <ul class="chips">
+              <li class="chip">Claude</li>
+              <li class="chip">OpenCode</li>
+              <li class="chip">Agentes de IA</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROYECTOS ================= -->
+    <section class="seccion" id="proyectos" aria-labelledby="proyectos-titulo">
+      <div class="contenedor">
+        <div class="seccion__cabecera" data-reveal>
+          <p class="eyebrow"><span class="eyebrow__num">03</span> Proyectos</p>
+          <h2 class="seccion__titulo" id="proyectos-titulo">Ideas que ya están funcionando</h2>
+          <p class="seccion__bajada">Una muestra de lo que he construido entre el aula, el equipo y las ganas de experimentar.</p>
+        </div>
+
+        <div class="proyectos__grid">
+          <article class="proyecto" data-tilt data-reveal>
+            <div class="proyecto__top">
+              <span class="proyecto__num" aria-hidden="true">01</span>
+              <span class="etiqueta">Proyecto académico</span>
+            </div>
+            <h3 class="proyecto__titulo">ClassControl</h3>
+            <p class="proyecto__sub">Sistema de gestión académica</p>
+            <ul class="proyecto__lista">
+              <li>Solución de gestión académica con Java, JSP, Servlets y MySQL, con módulos de autenticación y administración de información.</li>
+              <li>Aplicación móvil complementaria con Flutter y Dart.</li>
+              <li>Despliegue del backend en Railway.</li>
+            </ul>
+            <ul class="chips chips--proyecto">
+              <li class="chip">Java</li>
+              <li class="chip">JSP</li>
+              <li class="chip">MySQL</li>
+              <li class="chip">Flutter</li>
+              <li class="chip">Railway</li>
+            </ul>
+          </article>
+
+          <article class="proyecto" data-tilt data-reveal style="--d:.08s">
+            <div class="proyecto__top">
+              <span class="proyecto__num" aria-hidden="true">02</span>
+              <span class="etiqueta">Automatización</span>
+            </div>
+            <h3 class="proyecto__titulo">Nova AI</h3>
+            <p class="proyecto__sub">Asistente virtual</p>
+            <ul class="proyecto__lista">
+              <li>Diseño de flujos conversacionales y automatización de respuestas para apoyar consultas del entorno SENA.</li>
+              <li>Exploración de chatbots, integración con fuentes de información y herramientas de inteligencia artificial.</li>
+            </ul>
+            <ul class="chips chips--proyecto">
+              <li class="chip">Botpress</li>
+              <li class="chip">Chatbots</li>
+              <li class="chip">IA</li>
+            </ul>
+          </article>
+
+          <article class="proyecto" data-tilt data-reveal style="--d:.16s">
+            <div class="proyecto__top">
+              <span class="proyecto__num" aria-hidden="true">03</span>
+              <span class="etiqueta">Personal / académico</span>
+            </div>
+            <h3 class="proyecto__titulo">Páginas web</h3>
+            <p class="proyecto__sub">Diseño y desarrollo frontend</p>
+            <ul class="proyecto__lista">
+              <li>Creación de páginas con HTML5, CSS3, JavaScript y Bootstrap.</li>
+              <li>Diseños responsivos, animaciones y efectos visuales cuidados al detalle.</li>
+            </ul>
+            <ul class="chips chips--proyecto">
+              <li class="chip">HTML5</li>
+              <li class="chip">CSS3</li>
+              <li class="chip">JavaScript</li>
+              <li class="chip">Bootstrap</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FORMACIÓN ================= -->
+    <section class="seccion" id="formacion" aria-labelledby="formacion-titulo">
+      <div class="contenedor">
+        <div class="seccion__cabecera" data-reveal>
+          <p class="eyebrow"><span class="eyebrow__num">04</span> Formación académica</p>
+          <h2 class="seccion__titulo" id="formacion-titulo">El camino que estoy recorriendo</h2>
+          <p class="seccion__bajada">Formación técnica y tecnológica con enfoque en software, datos y soluciones reales.</p>
+        </div>
+
+        <ol class="linea-tiempo">
+          <li class="linea-tiempo__item" data-reveal>
+            <span class="linea-tiempo__punto" aria-hidden="true"></span>
+            <div class="linea-tiempo__caja">
+              <p class="linea-tiempo__fecha">2025 — Actualidad</p>
+              <h3>Tecnólogo en Análisis y Desarrollo de Software (ADSO)</h3>
+              <p class="linea-tiempo__lugar">SENA · Bogotá</p>
+              <p>Formación en desarrollo web, bases de datos, programación y despliegue, con proyecto formativo aplicado.</p>
+            </div>
+          </li>
+
+          <li class="linea-tiempo__item" data-reveal style="--d:.08s">
+            <span class="linea-tiempo__punto" aria-hidden="true"></span>
+            <div class="linea-tiempo__caja">
+              <p class="linea-tiempo__fecha">2024</p>
+              <h3>Técnico en Agricultura Socioecológica</h3>
+              <p class="linea-tiempo__lugar">SENA</p>
+              <p>Formación técnica orientada al trabajo de campo, la sostenibilidad y la aplicación de conocimientos en cultivos.</p>
+            </div>
+          </li>
+
+          <li class="linea-tiempo__item" data-reveal style="--d:.16s">
+            <span class="linea-tiempo__punto" aria-hidden="true"></span>
+            <div class="linea-tiempo__caja">
+              <p class="linea-tiempo__fecha">2024</p>
+              <h3>Bachillerato Académico</h3>
+              <p class="linea-tiempo__lugar">Institución educativa</p>
+              <p>Base académica que abrió el camino hacia la tecnología y la ingeniería de software.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= CERTIFICACIONES ================= -->
+    <section class="seccion" id="certificaciones" aria-labelledby="certificaciones-titulo">
+      <div class="contenedor">
+        <div class="seccion__cabecera" data-reveal>
+          <p class="eyebrow"><span class="eyebrow__num">05</span> Certificaciones</p>
+          <h2 class="seccion__titulo" id="certificaciones-titulo">Aprendizaje respaldado</h2>
+        </div>
+
+        <div class="certificaciones__grid">
+          <article class="certificado" data-reveal>
+            <span class="certificado__icono"><svg class="icono" aria-hidden="true"><use href="#i-award"/></svg></span>
+            <div>
+              <h3>Bachiller</h3>
+              <p>Educación media</p>
+            </div>
+            <svg class="certificado__check icono" aria-hidden="true"><use href="#i-check"/></svg>
+          </article>
+
+          <article class="certificado" data-reveal style="--d:.05s">
+            <span class="certificado__icono"><svg class="icono" aria-hidden="true"><use href="#i-award"/></svg></span>
+            <div>
+              <h3>Técnico</h3>
+              <p>Agricultura Socioecológica · SENA</p>
+            </div>
+            <svg class="certificado__check icono" aria-hidden="true"><use href="#i-check"/></svg>
+          </article>
+
+          <article class="certificado" data-reveal style="--d:.1s">
+            <span class="certificado__icono"><svg class="icono" aria-hidden="true"><use href="#i-award"/></svg></span>
+            <div>
+              <h3>Cisco Networking Academy</h3>
+              <p>Python, HTML, CSS y Java</p>
+            </div>
+            <svg class="certificado__check icono" aria-hidden="true"><use href="#i-check"/></svg>
+          </article>
+
+          <article class="certificado" data-reveal style="--d:.15s">
+            <span class="certificado__icono"><svg class="icono" aria-hidden="true"><use href="#i-award"/></svg></span>
+            <div>
+              <h3>Sistemas Avanzados</h3>
+              <p>Formación complementaria</p>
+            </div>
+            <svg class="certificado__check icono" aria-hidden="true"><use href="#i-check"/></svg>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCIA ================= -->
+    <section class="seccion" id="experiencia" aria-labelledby="experiencia-titulo">
+      <div class="contenedor">
+        <div class="seccion__cabecera" data-reveal>
+          <p class="eyebrow"><span class="eyebrow__num">06</span> Experiencia y actividades</p>
+          <h2 class="seccion__titulo" id="experiencia-titulo">Oficio, servicio y disciplina</h2>
+          <p class="seccion__bajada">Experiencias complementarias que fortalecieron mi criterio técnico y mi trato con las personas.</p>
+        </div>
+
+        <div class="experiencia__grid">
+          <article class="actividad" data-reveal>
+            <span class="actividad__icono"><svg class="icono" aria-hidden="true"><use href="#i-tools"/></svg></span>
+            <h3>Mantenimiento de equipos</h3>
+            <p>Mantenimiento, reparación, instalación y configuración de software, adquiridos en formación complementaria.</p>
+          </article>
+
+          <article class="actividad" data-reveal style="--d:.05s">
+            <span class="actividad__icono"><svg class="icono" aria-hidden="true"><use href="#i-leaf"/></svg></span>
+            <h3>Prácticas agrícolas</h3>
+            <p>Aplicación de conocimientos de agricultura socioecológica en el trabajo con cultivos.</p>
+          </article>
+
+          <article class="actividad" data-reveal style="--d:.1s">
+            <span class="actividad__icono"><svg class="icono" aria-hidden="true"><use href="#i-users"/></svg></span>
+            <h3>Atención al cliente</h3>
+            <p>Servicio en mesa y caja: comunicación clara, paciencia y responsabilidad con cada persona.</p>
+          </article>
+
+          <article class="actividad" data-reveal style="--d:.15s">
+            <span class="actividad__icono"><svg class="icono" aria-hidden="true"><use href="#i-doc"/></svg></span>
+            <h3>Informes digitales</h3>
+            <p>Manejo de herramientas ofimáticas y preparación de documentos e informes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= COMPETENCIAS ================= -->
+    <section class="seccion" id="competencias" aria-labelledby="competencias-titulo">
+      <div class="contenedor">
+        <div class="seccion__cabecera" data-reveal>
+          <p class="eyebrow"><span class="eyebrow__num">07</span> Competencias e idiomas</p>
+          <h2 class="seccion__titulo" id="competencias-titulo">Cómo me relaciono y sigo creciendo</h2>
+        </div>
+
+        <div class="competencias__grid">
+          <div class="panel" data-reveal>
+            <h3 class="panel__titulo"><svg class="icono" aria-hidden="true"><use href="#i-users"/></svg> Competencias blandas</h3>
+            <ul class="chips chips--grandes">
+              <li class="chip">Liderazgo</li>
+              <li class="chip">Trabajo en equipo</li>
+              <li class="chip">Escucha activa</li>
+              <li class="chip">Comunicación respetuosa</li>
+              <li class="chip">Pensamiento crítico</li>
+              <li class="chip">Adaptabilidad</li>
+              <li class="chip">Aprendizaje continuo</li>
+            </ul>
+          </div>
+
+          <div class="panel" data-reveal style="--d:.08s">
+            <h3 class="panel__titulo"><svg class="icono" aria-hidden="true"><use href="#i-globe"/></svg> Idiomas</h3>
+            <p class="idioma__texto">
+              <strong>Inglés A1.</strong> Sigo aprendiendo y practicando para mejorar mi nivel.
+            </p>
+
+            <h4 class="panel__subtitulo">Intereses</h4>
+            <ul class="chips">
+              <li class="chip">Desarrollo de software</li>
+              <li class="chip">Inteligencia artificial</li>
+              <li class="chip">Automatización</li>
+              <li class="chip">Lectura</li>
+              <li class="chip">Música</li>
+              <li class="chip">Aprender cosas nuevas</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACTO ================= -->
+    <section class="seccion seccion--contacto" id="contacto" aria-labelledby="contacto-titulo">
+      <div class="contenedor">
+        <div class="contacto" data-reveal>
+          <p class="eyebrow eyebrow--centrado"><span class="eyebrow__num">08</span> Contacto</p>
+          <h2 class="contacto__titulo" id="contacto-titulo">¿Hablamos?</h2>
+          <p class="contacto__texto">
+            Estoy buscando oportunidades como desarrollador junior.
+            Si quieres contactarme, aquí están mis datos.
+          </p>
+
+          <ul class="contacto__datos">
+            <li>
+              <a href="mailto:eison2019vasquez@gmail.com">
+                <svg class="icono" aria-hidden="true"><use href="#i-mail"/></svg>
+                eison2019vasquez@gmail.com
+              </a>
+            </li>
+            <li>
+              <a href="tel:+573103450357">
+                <svg class="icono" aria-hidden="true"><use href="#i-phone"/></svg>
+                310 345 0357
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Stivxn-n" target="_blank" rel="noopener">
+                <svg class="icono" aria-hidden="true"><use href="#i-github"/></svg>
+                github.com/Stivxn-n
+              </a>
+            </li>
+            <li>
+              <span>
+                <svg class="icono" aria-hidden="true"><use href="#i-pin"/></svg>
+                Bogotá, Colombia
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__inner">
+      <p class="pie__marca">
+        <span class="nav__logo nav__logo--sm" aria-hidden="true">ER</span>
+        Eison Stiven Ramírez Vásquez
+      </p>
+      <p class="pie__nota">Diseñado y construido con HTML, CSS y JavaScript. <span id="anio">2026</span>.</p>
+      <div class="pie__acciones">
+        <button class="pie__boton" type="button" id="matrix-toggle-pie">
+          <svg class="icono" aria-hidden="true"><use href="#i-terminal"/></svg>
+          Modo matrix
+        </button>
+        <a class="pie__boton" href="#inicio">
+          <svg class="icono" aria-hidden="true"><use href="#i-up"/></svg>
+          Volver arriba
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/background.js" defer></script>
+  <script src="js/typing.js" defer></script>
+  <script src="js/matrix.js" defer></script>
+  <script src="js/interactions.js" defer></script>
+</body>
+</html>

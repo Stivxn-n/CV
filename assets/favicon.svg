@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="tituloIcono">
+  <title id="tituloIcono">Eison Ramírez</title>
+  <defs>
+    <linearGradient id="borde" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="55%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+    <linearGradient id="texto" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#67e8f9"/>
+      <stop offset="100%" stop-color="#c4b5fd"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#080b13"/>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="none" stroke="url(#borde)" stroke-width="2.5"/>
+  <text x="32" y="41" text-anchor="middle"
+        font-family="'Consolas', 'Courier New', monospace"
+        font-size="22" font-weight="700" letter-spacing="-1"
+        fill="url(#texto)">ER</text>
+</svg>

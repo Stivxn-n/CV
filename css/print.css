@@ -1,0 +1,644 @@
+/* ==========================================================================
+   print.css — Versión limpia para imprimir o guardar como PDF
+   ========================================================================== */
+
+@page {
+  size: A4;
+  margin: 13mm 13mm 14mm;
+}
+
+:root {
+  --bg: #ffffff;
+  --bg-suave: #ffffff;
+  --texto: #111827;
+  --texto-suave: #374151;
+  --texto-tenue: #6b7280;
+  --cian: #0e7490;
+  --violeta: #6d28d9;
+  --verde: #047857;
+  --rosa: #be185d;
+  --borde: #e2e8f0;
+  --borde-fuerte: #cbd5e1;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  background: #fff !important;
+  background-image: none !important;
+  color: #111827;
+  font-size: 10pt;
+  line-height: 1.45;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+*,
+*::before,
+*::after {
+  animation: none !important;
+  transition: none !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+[data-reveal],
+.js [data-reveal] {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+[data-tilt] {
+  transform: none !important;
+}
+
+/* Elementos que no pertenecen al documento impreso */
+.nav,
+.progreso,
+.fondo-particulas,
+.aurora,
+.matrix,
+.cursor,
+.skip-link,
+.hero__acciones,
+.ficha-rapida,
+.pie__acciones,
+.pie__nota,
+.holo__anillo,
+.holo__scan,
+.holo__chip,
+.holo__estado,
+.typing__caret {
+  display: none !important;
+}
+
+/* --------------------------------------------------------------------------
+   Encabezado
+   -------------------------------------------------------------------------- */
+
+.hero {
+  padding: 0 0 10pt;
+}
+
+.hero__grid {
+  display: block;
+  position: relative;
+}
+
+.hero__texto {
+  max-width: none;
+  padding-right: 40mm;
+}
+
+.hero__visual {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 32mm;
+  margin: 0;
+}
+
+.holo {
+  width: 32mm;
+  margin: 0;
+}
+
+.holo__marco {
+  padding: 0;
+  border: 0.6pt solid #cbd5e1;
+  background: none;
+}
+
+.holo__foto {
+  border-radius: 50%;
+  background: #f1f5f9;
+}
+
+.hero__titulo {
+  margin-top: 6pt;
+  font-size: 24pt;
+  line-height: 1.04;
+  letter-spacing: -0.03em;
+}
+
+.texto-degradado {
+  background: none !important;
+  color: #111827 !important;
+  -webkit-text-fill-color: #111827 !important;
+}
+
+.hero__rol {
+  margin-top: 6pt;
+  font-size: 10pt;
+}
+
+.hero__rol-fijo {
+  font-weight: 600;
+}
+
+.hero__rol-tipo {
+  display: block;
+  margin-top: 1pt;
+  color: #0e7490;
+  font-size: 8.5pt;
+}
+
+.hero__bajada {
+  max-width: 100%;
+  margin-top: 6pt;
+  color: #374151;
+  font-size: 9pt;
+}
+
+.hero__datos {
+  gap: 2pt 10pt;
+  margin-top: 7pt;
+  color: #4b5563;
+  font-size: 8pt;
+}
+
+.hero__datos .icono {
+  color: #0e7490;
+}
+
+/* --------------------------------------------------------------------------
+   Secciones
+   -------------------------------------------------------------------------- */
+
+.seccion {
+  padding: 9pt 0;
+  border-top: 0.6pt solid #e5e7eb;
+}
+
+.seccion__cabecera {
+  max-width: none;
+  margin-bottom: 7pt;
+}
+
+.eyebrow {
+  color: #0e7490;
+  font-size: 6.8pt;
+  letter-spacing: 0.14em;
+}
+
+.eyebrow__num {
+  border-color: #bae6fd;
+  background: #f0f9ff;
+  color: #0e7490;
+  font-size: 6.4pt;
+}
+
+.seccion__titulo {
+  margin-top: 2pt;
+  font-size: 15pt;
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+.seccion__bajada {
+  margin-top: 3pt;
+  color: #4b5563;
+  font-size: 8.6pt;
+}
+
+h3 {
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+p {
+  orphans: 3;
+  widows: 3;
+}
+
+/* --------------------------------------------------------------------------
+   Perfil
+   -------------------------------------------------------------------------- */
+
+.perfil__grid {
+  display: block;
+}
+
+.perfil__texto p {
+  color: #374151;
+  font-size: 9pt;
+}
+
+.perfil__texto p + p {
+  margin-top: 4pt;
+}
+
+.ficha {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.6pt;
+  margin-top: 8pt;
+  border: 0.6pt solid #e2e8f0;
+  background: #e2e8f0;
+}
+
+.ficha__item {
+  padding: 4pt 6pt;
+  background: #fafafa;
+}
+
+.ficha dt {
+  color: #6b7280;
+  font-size: 6.2pt;
+}
+
+.ficha dd {
+  color: #111827;
+  font-size: 8pt;
+}
+
+.perfil__tarjetas {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 5pt;
+  margin-top: 8pt;
+}
+
+.destacado {
+  padding: 6pt 7pt;
+  border: 0.6pt solid #e2e8f0;
+  background: #fff;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.destacado__icono,
+.habilidad__icono,
+.actividad__icono,
+.certificado__icono {
+  width: 18pt;
+  height: 18pt;
+  border: 0.6pt solid #cbd5e1;
+  background: #f8fafc;
+  color: #0e7490;
+}
+
+.destacado__icono .icono,
+.habilidad__icono .icono,
+.actividad__icono .icono,
+.certificado__icono .icono {
+  width: 9pt;
+  height: 9pt;
+}
+
+.destacado h3 {
+  margin-top: 4pt;
+  font-size: 8.6pt;
+}
+
+.destacado p {
+  margin-top: 2pt;
+  color: #4b5563;
+  font-size: 7.6pt;
+}
+
+/* --------------------------------------------------------------------------
+   Habilidades, proyectos y listados
+   -------------------------------------------------------------------------- */
+
+.habilidades__grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 5pt;
+}
+
+.habilidad {
+  padding: 6pt;
+  border: 0.6pt solid #e2e8f0;
+  background: #fff;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.habilidad::before {
+  display: none;
+}
+
+.habilidad h3 {
+  margin: 4pt 0 3pt;
+  font-size: 8.4pt;
+}
+
+.chip {
+  padding: 0.5pt 3.5pt;
+  border: 0.5pt solid #d1d5db;
+  background: #f9fafb;
+  color: #374151;
+  font-size: 6.6pt;
+}
+
+.habilidad .chip {
+  padding: 0.5pt 3pt;
+  font-size: 6.3pt;
+}
+
+.chips {
+  gap: 2pt;
+}
+
+.proyectos__grid {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 6pt;
+}
+
+.proyecto {
+  display: block;
+  padding: 7pt 9pt;
+  border: 0.6pt solid #e2e8f0;
+  background: #fff;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.proyecto::before {
+  display: none;
+}
+
+.proyecto__num {
+  color: #94a3b8;
+  background: none;
+  -webkit-text-fill-color: #94a3b8;
+  font-size: 11pt;
+}
+
+.proyecto__titulo {
+  margin-top: 3pt;
+  font-size: 11pt;
+}
+
+.proyecto__sub {
+  color: #6d28d9;
+  font-size: 7.4pt;
+}
+
+.proyecto__lista {
+  margin-top: 3pt;
+  margin-bottom: 4pt;
+  gap: 2pt;
+}
+
+.proyecto__lista li {
+  color: #374151;
+  font-size: 8.4pt;
+}
+
+.proyecto__lista li::before {
+  background: #0e7490;
+}
+
+.etiqueta {
+  padding: 0.5pt 4pt;
+  border: 0.5pt solid #d1d5db;
+  background: #f9fafb;
+  color: #4b5563;
+  font-size: 6.2pt;
+}
+
+/* --------------------------------------------------------------------------
+   Formación
+   -------------------------------------------------------------------------- */
+
+.linea-tiempo {
+  max-width: none;
+  padding-left: 0;
+}
+
+.linea-tiempo::before,
+.linea-tiempo__punto {
+  display: none;
+}
+
+.linea-tiempo__item {
+  padding-bottom: 5pt;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.linea-tiempo__caja {
+  padding: 5pt 8pt;
+  border: 0.6pt solid #e2e8f0;
+  border-left: 2pt solid #0e7490;
+  background: #fff;
+}
+
+.linea-tiempo__fecha {
+  color: #0e7490;
+  font-size: 6.6pt;
+}
+
+.linea-tiempo__caja h3 {
+  margin-top: 1pt;
+  font-size: 9.2pt;
+}
+
+.linea-tiempo__lugar {
+  color: #6d28d9;
+  font-size: 7.6pt;
+}
+
+.linea-tiempo__caja p:last-child {
+  margin-top: 2pt;
+  color: #4b5563;
+  font-size: 8pt;
+}
+
+/* --------------------------------------------------------------------------
+   Certificaciones, experiencia y competencias
+   -------------------------------------------------------------------------- */
+
+.certificaciones__grid,
+.experiencia__grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 5pt;
+}
+
+.certificado {
+  padding: 6pt 8pt;
+  border: 0.6pt solid #e2e8f0;
+  background: #fff;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.certificado__icono {
+  width: 18pt;
+  height: 18pt;
+  color: #047857;
+}
+
+.certificado h3 {
+  font-size: 8.6pt;
+}
+
+.certificado p {
+  color: #6b7280;
+  font-size: 7.2pt;
+}
+
+.certificado__check {
+  color: #047857;
+  width: 8pt;
+  height: 8pt;
+}
+
+.actividad {
+  padding: 7pt 8pt;
+  border: 0.6pt solid #e2e8f0;
+  background: #fff;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.actividad h3 {
+  margin: 4pt 0 2pt;
+  font-size: 8.8pt;
+}
+
+.actividad p {
+  color: #4b5563;
+  font-size: 7.8pt;
+}
+
+.competencias__grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6pt;
+}
+
+.panel {
+  padding: 8pt 9pt;
+  border: 0.6pt solid #e2e8f0;
+  background: #fff;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.panel__titulo {
+  font-size: 8.8pt;
+}
+
+.panel__titulo .icono {
+  color: #0e7490;
+}
+
+.panel__subtitulo {
+  margin-top: 6pt;
+  margin-bottom: 3pt;
+  color: #6b7280;
+  font-size: 6.2pt;
+}
+
+.chips--grandes .chip {
+  padding: 1pt 4pt;
+  font-size: 7pt;
+}
+
+.idioma__texto {
+  margin-top: 5pt;
+  color: #374151;
+  font-size: 8pt;
+}
+
+.idioma__texto strong {
+  color: #111827;
+}
+
+/* --------------------------------------------------------------------------
+   Contacto y pie
+   -------------------------------------------------------------------------- */
+
+.seccion--contacto {
+  padding-bottom: 8pt;
+  border-top: 0.6pt solid #e5e7eb;
+}
+
+.contacto {
+  padding: 10pt 12pt;
+  border: 0.6pt solid #cbd5e1;
+  border-radius: 3pt;
+  background: #f8fafc;
+  text-align: left;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.contacto__titulo {
+  margin-top: 2pt;
+  font-size: 15pt;
+}
+
+.contacto__texto {
+  margin: 3pt 0 0;
+  color: #374151;
+  font-size: 8.6pt;
+}
+
+.contacto__datos {
+  justify-content: flex-start;
+  gap: 3pt 12pt;
+  margin-top: 7pt;
+  font-size: 8pt;
+}
+
+.contacto__datos li > * {
+  color: #111827;
+}
+
+.contacto__datos .icono {
+  width: 8pt;
+  height: 8pt;
+  color: #0e7490;
+}
+
+.pie {
+  padding: 7pt 0 0;
+  border-top: 0.6pt solid #e5e7eb;
+  background: none;
+}
+
+.pie__inner {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pie__marca {
+  font-size: 7.6pt;
+}
+
+.pie__nota {
+  display: none;
+}
+
+.nav__logo,
+.nav__logo--sm {
+  width: 14pt;
+  height: 14pt;
+  border: 0.5pt solid #cbd5e1;
+  background: #f8fafc;
+  color: #111827;
+  font-size: 5pt;
+}
+
+/* --------------------------------------------------------------------------
+   Control de saltos de página
+   -------------------------------------------------------------------------- */
+
+.seccion,
+.perfil__grid,
+.competencias__grid {
+  break-inside: auto;
+  page-break-inside: auto;
+}
+
+h1,
+h2,
+h3,
+.seccion__cabecera {
+  break-after: avoid;
+  page-break-after: avoid;
+}

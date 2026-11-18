@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" role="img" aria-labelledby="tituloAvatar">
+  <title id="tituloAvatar">Avatar temporal de Eison Ramírez con las iniciales ER</title>
+
+  <defs>
+    <radialGradient id="fondo" cx="50%" cy="36%" r="78%">
+      <stop offset="0%" stop-color="#17223b"/>
+      <stop offset="55%" stop-color="#0b1020"/>
+      <stop offset="100%" stop-color="#06090f"/>
+    </radialGradient>
+
+    <linearGradient id="acento" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#67e8f9"/>
+      <stop offset="48%" stop-color="#22d3ee"/>
+      <stop offset="76%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+
+    <pattern id="rejilla" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0v34" fill="none" stroke="#9fb3c8" stroke-opacity="0.07"/>
+    </pattern>
+
+    <filter id="suave" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+
+  <rect width="440" height="440" fill="url(#fondo)"/>
+  <rect width="440" height="440" fill="url(#rejilla)"/>
+
+  <ellipse cx="220" cy="212" rx="132" ry="104" fill="#22d3ee" opacity="0.16" filter="url(#suave)"/>
+  <ellipse cx="252" cy="236" rx="96" ry="84" fill="#a78bfa" opacity="0.16" filter="url(#suave)"/>
+
+  <g fill="none" stroke="url(#acento)">
+    <circle cx="220" cy="220" r="190" stroke-opacity="0.3" stroke-dasharray="3 12"/>
+    <circle cx="220" cy="220" r="158" stroke-opacity="0.18"/>
+    <circle cx="220" cy="220" r="118" stroke-opacity="0.1"/>
+  </g>
+
+  <g fill="#22d3ee">
+    <circle cx="220" cy="30" r="3.5" opacity="0.9"/>
+    <circle cx="220" cy="410" r="3" opacity="0.55"/>
+    <circle cx="30" cy="220" r="3" opacity="0.55"/>
+    <circle cx="410" cy="220" r="3.5" opacity="0.9"/>
+  </g>
+
+  <g fill="none" stroke="url(#acento)" stroke-width="2" stroke-linecap="round" opacity="0.55">
+    <path d="M96 132v-30h30"/>
+    <path d="M344 132v-30h-30"/>
+    <path d="M96 308v30h30"/>
+    <path d="M344 308v30h-30"/>
+  </g>
+
+  <text x="220" y="252" text-anchor="middle"
+        font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+        font-size="128" font-weight="700" letter-spacing="-7"
+        fill="url(#acento)">ER</text>
+
+  <text x="220" y="302" text-anchor="middle"
+        font-family="'Consolas', 'Courier New', monospace"
+        font-size="13" letter-spacing="5.5"
+        fill="#9fb3c8" fill-opacity="0.9">FULL STACK</text>
+
+  <text x="220" y="326" text-anchor="middle"
+        font-family="'Consolas', 'Courier New', monospace"
+        font-size="12" letter-spacing="3"
+        fill="#7b86a0" fill-opacity="0.8">&lt;/&gt;</text>
+</svg>

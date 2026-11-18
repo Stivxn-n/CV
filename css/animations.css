@@ -1,0 +1,236 @@
+/* ==========================================================================
+   animations.css — Keyframes, aparición al hacer scroll y efectos
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Keyframes
+   -------------------------------------------------------------------------- */
+
+@keyframes latido {
+  0% {
+    box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 7px rgba(52, 211, 153, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(52, 211, 153, 0);
+  }
+}
+
+@keyframes parpadeo {
+  0%,
+  48% {
+    opacity: 1;
+  }
+  49%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes flotar {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes rotar {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes escanear {
+  0% {
+    background-position: 0 -120%;
+  }
+  100% {
+    background-position: 0 220%;
+  }
+}
+
+@keyframes derivar-1 {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(7vw, 5vh, 0) scale(1.14);
+  }
+  100% {
+    transform: translate3d(-3vw, 9vh, 0) scale(1.03);
+  }
+}
+
+@keyframes derivar-2 {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1.05);
+  }
+  50% {
+    transform: translate3d(-8vw, 7vh, 0) scale(0.92);
+  }
+  100% {
+    transform: translate3d(4vw, -4vh, 0) scale(1.1);
+  }
+}
+
+@keyframes derivar-3 {
+  0% {
+    transform: translate3d(0, 0, 0) scale(0.95);
+  }
+  50% {
+    transform: translate3d(5vw, -6vh, 0) scale(1.12);
+  }
+  100% {
+    transform: translate3d(-6vw, 3vh, 0) scale(1);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Aparición al hacer scroll
+   -------------------------------------------------------------------------- */
+
+.js [data-reveal] {
+  opacity: 0;
+  transform: translateY(26px);
+  transition:
+    opacity 900ms var(--curva),
+    transform 900ms var(--curva);
+  transition-delay: var(--d, 0s);
+}
+
+.js [data-reveal].revelado {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --------------------------------------------------------------------------
+   Fondo aurora
+   -------------------------------------------------------------------------- */
+
+.aurora__blob--1 {
+  animation: derivar-1 24s ease-in-out infinite alternate;
+}
+
+.aurora__blob--2 {
+  animation: derivar-2 30s ease-in-out infinite alternate;
+}
+
+.aurora__blob--3 {
+  animation: derivar-3 36s ease-in-out infinite alternate;
+}
+
+/* --------------------------------------------------------------------------
+   Avatar
+   -------------------------------------------------------------------------- */
+
+.holo__anillo {
+  animation: rotar 44s linear infinite;
+}
+
+.holo__scan {
+  animation: escanear 5.5s ease-in-out infinite;
+}
+
+.holo__chip--1 {
+  animation: flotar 6s ease-in-out infinite;
+}
+
+.holo__chip--2 {
+  animation: flotar 7.5s ease-in-out infinite;
+  animation-delay: -2s;
+}
+
+.holo__chip--3 {
+  animation: flotar 6.8s ease-in-out infinite;
+  animation-delay: -4s;
+}
+
+.holo:hover .holo__marco {
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.08),
+    0 34px 80px -28px rgba(167, 139, 250, 0.55),
+    inset 0 0 40px rgba(5, 6, 11, 0.8);
+}
+
+.holo__marco {
+  transition: box-shadow 500ms ease;
+}
+
+/* --------------------------------------------------------------------------
+   Escritura
+   -------------------------------------------------------------------------- */
+
+.typing__caret {
+  display: inline-block;
+  width: 0.55em;
+  height: 1.05em;
+  margin-left: 0.12em;
+  background: var(--cian);
+  vertical-align: -0.16em;
+  animation: parpadeo 1.05s steps(1) infinite;
+}
+
+/* --------------------------------------------------------------------------
+   Tarjetas con inclinación 3D
+   -------------------------------------------------------------------------- */
+
+[data-tilt] {
+  will-change: transform;
+  transform-style: preserve-3d;
+}
+
+.holo[data-tilt] {
+  transition: transform 180ms ease-out;
+}
+
+.proyecto[data-tilt] {
+  transition:
+    transform 180ms ease-out,
+    border-color var(--medio) ease,
+    box-shadow var(--medio) ease;
+}
+
+/* --------------------------------------------------------------------------
+   Modo matrix
+   -------------------------------------------------------------------------- */
+
+body.matrix-activo .fondo-particulas {
+  opacity: 0.25;
+}
+
+body.matrix-activo .aurora__blob {
+  opacity: 0.16;
+}
+
+body.matrix-activo .nav--compacto {
+  background: rgba(5, 6, 11, 0.85);
+}
+
+/* --------------------------------------------------------------------------
+   Movimiento reducido
+   -------------------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .js [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .aurora__blob,
+  .holo__anillo,
+  .holo__scan,
+  .holo__chip,
+  .typing__caret {
+    animation: none !important;
+  }
+
+  .typing__caret {
+    display: none;
+  }
+}
